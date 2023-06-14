@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleNavBtn = () => {
     setIsMobile((preVal) => !preVal);
@@ -19,11 +19,11 @@ const Navbar = () => {
         <li className="p-4 hover:text-[#00df9a] cursor-pointer ease-in-out duration-200 ">CONTACT</li>
       </ul>
       <div onClick={handleNavBtn} className="block md:hidden">
-        {isMobile ? <AiOutlineMenu size={20} /> : <AiOutlineClose size={20} />}
+        {isMobile ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />} 
       </div>
       <div
         className={
-          !isMobile
+          isMobile
             ? "fixed left-0 top-0 w-[60%] h-full border-r-gray-900 bg-[#000300] ease-in-out duration-500 "
             : "fixed left-[-100%]"
         }
