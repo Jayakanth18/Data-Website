@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="m-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
       <div>
         <h1 className="w-full text-3xl font-bold cursor-pointer text-[#00df9a]">
-          REACT.
+          DATA.
         </h1>
         <p className="py-4">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate

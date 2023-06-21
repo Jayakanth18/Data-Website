@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className=" flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white ">
       <h1 className="text-3xl mt-1 font-bold text-[#00df9a] cursor-pointer">
-        REACT.
+        DATA.
       </h1>
       <ul className="hidden md:flex ">
         <li className="p-4 hover:text-[#00df9a] hover:border-b border-[#00df9a] cursor-pointer ">
@@ -30,20 +30,20 @@ const Navbar = () => {
           CONTACT
         </li>
       </ul>
-      <div onClick={handleNavBtn} className="block md:hidden">
+      <div onClick={handleNavBtn} className="block md:hidden z-20">
         {isMobile ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
       <div
         className={
           isMobile
-            ? "fixed left-0 top-0 w-[60%] h-full border-r-gray-900 bg-[#000300] ease-in-out duration-500 "
+            ? "fixed left-0 top-0 w-[100%] h-full border-r-gray-900 bg-[#000300] ease-in-out duration-500 z-10"
             : "fixed left-[-100%]"
         }
       >
         <h1 className="w-full text-3xl mt-8 font-bold text-[#00df9a] m-4">
-          REACT.
+          DATA.
         </h1>
-        <ul className="p-4">
+        <ul className="p-8 text-2xl text-center">
           <li className="p-4 border-b border-[#00df9a]">HOME</li>
           <li className="p-4 border-b border-[#00df9a]">COMPANY</li>
           <li className="p-4 border-b border-[#00df9a]">RESOURCES</li>

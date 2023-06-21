@@ -24,7 +24,7 @@ const LandingPage = () => {
           />
         </div>
         <p className="md:text-2xl sm:text-1xl text-l font-bold text-gray-500">
-          Monitor your data analytics to increase revenue fo BTB, BTC, & SASS
+          Monitor your data analytics to increase revenue for BTB, BTC, & SASS
           platforms.
         </p>
         <button className="bg-[#00df9a] sm:w-[150px] md:w-[180px] w-[120px] mt-14 md:mt-10 rounded-md font-medium my-6 mx-auto py-3 text-black">
